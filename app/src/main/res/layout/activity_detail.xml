@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/teal_green"
+            >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iv_detailAvatar"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/ic_baseline_arrow_back_32"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_detailAvatar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_detailUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_detailAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/username"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detailUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/followers"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_weight="4"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_detailFollowers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text= "345"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_weight="4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="4"
+                    android:text="@string/following"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_detailFollowing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="345"
+                    android:textSize="16sp"
+                    android:layout_weight="4"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="32dp"
+            >
+
+            <TextView
+                android:text="Name"
+                style="@style/TextView.HighDetail"
+                />
+
+            <TextView
+                android:id="@+id/tv_detailName"
+                tools:text="Kolom nama"
+                style="@style/TextView.LowDetail"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/teal_green"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:text="@string/repository"
+                style="@style/TextView.HighDetail"
+                />
+
+            <TextView
+                android:id="@+id/tv_detailRepository"
+                tools:text="Kolom repository"
+                style="@style/TextView.LowDetail"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/teal_green"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:text="@string/company"
+                style="@style/TextView.HighDetail"
+                />
+
+            <TextView
+                android:id="@+id/tv_detailCompany"
+                tools:text="Kolom company"
+                style="@style/TextView.LowDetail"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/teal_green"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:text="@string/location"
+                style="@style/TextView.HighDetail"
+                />
+
+            <TextView
+                android:id="@+id/tv_detailLocation"
+                tools:text="Kolom location"
+                style="@style/TextView.LowDetail"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/teal_green"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/share"
+            />
+    </LinearLayout>
+
+</ScrollView>
